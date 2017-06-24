@@ -6,6 +6,12 @@
 ; initialized data is put in the .data segment
 ;
 segment .data
+        syswrite: equ 4
+        stdout: equ 1
+        exit: equ 1
+        SUCCESS: equ 0
+        kernelcall: equ 80h
+
 
 
 ; uninitialized data is put in the .bss segment
@@ -20,7 +26,9 @@ segment .text
 asm_main:
         enter   0,0               ; setup routine
         pusha
-; next print out result message as series of steps
+; *********** Start  Assignment Code *******************
+
+; *********** End Assignment Code **********************
 
         popa
         mov     eax, 0            ; return back to C
