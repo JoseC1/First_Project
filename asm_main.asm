@@ -31,7 +31,7 @@ asm_main:
 ; *********** End Assignment Code **********************
 
         popa
-        mov     eax, 0            ; return back to C
+        mov     eax, SUCCESS       ; return back to the C program
         leave                     
         ret
 
